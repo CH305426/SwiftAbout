@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2790C866E6D799DA7BC4E788 /* Pods_SwiftTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B2292361235258DC6B365 /* Pods_SwiftTT.framework */; };
 		FDC5A8D22A532C2D001FC497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A8D12A532C2D001FC497 /* AppDelegate.swift */; };
 		FDC5A8D42A532C2D001FC497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A8D32A532C2D001FC497 /* SceneDelegate.swift */; };
 		FDC5A8D62A532C2D001FC497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5A8D52A532C2D001FC497 /* ViewController.swift */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0B2292361235258DC6B365 /* Pods_SwiftTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		793C944DBCDCF48DCE99610A /* Pods-SwiftTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTT.release.xcconfig"; path = "Target Support Files/Pods-SwiftTT/Pods-SwiftTT.release.xcconfig"; sourceTree = "<group>"; };
+		9469091CD9A5A795081F225F /* Pods-SwiftTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTT.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTT/Pods-SwiftTT.debug.xcconfig"; sourceTree = "<group>"; };
 		FDC5A8CE2A532C2D001FC497 /* SwiftTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC5A8D12A532C2D001FC497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC5A8D32A532C2D001FC497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2790C866E6D799DA7BC4E788 /* Pods_SwiftTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472BC4CF462FC09821A68334 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9469091CD9A5A795081F225F /* Pods-SwiftTT.debug.xcconfig */,
+				793C944DBCDCF48DCE99610A /* Pods-SwiftTT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4730854D737B25D6DDCF8D46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B2292361235258DC6B365 /* Pods_SwiftTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDC5A8C52A532C2D001FC497 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				FDC5A8E72A532C30001FC497 /* SwiftTTTests */,
 				FDC5A8F12A532C30001FC497 /* SwiftTTUITests */,
 				FDC5A8CF2A532C2D001FC497 /* Products */,
+				472BC4CF462FC09821A68334 /* Pods */,
+				4730854D737B25D6DDCF8D46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDC5A8F82A532C30001FC497 /* Build configuration list for PBXNativeTarget "SwiftTT" */;
 			buildPhases = (
+				DF01218B1FBB667C863437BD /* [CP] Check Pods Manifest.lock */,
 				FDC5A8CA2A532C2D001FC497 /* Sources */,
 				FDC5A8CB2A532C2D001FC497 /* Frameworks */,
 				FDC5A8CC2A532C2D001FC497 /* Resources */,
+				A93DF4F6E7FF9C75C62AAF63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +234,7 @@
 				};
 			};
 			buildConfigurationList = FDC5A8C92A532C2D001FC497 /* Build configuration list for PBXProject "SwiftTT" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A93DF4F6E7FF9C75C62AAF63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTT/Pods-SwiftTT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTT/Pods-SwiftTT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftTT/Pods-SwiftTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF01218B1FBB667C863437BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftTT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDC5A8CA2A532C2D001FC497 /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		FDC5A8F92A532C30001FC497 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9469091CD9A5A795081F225F /* Pods-SwiftTT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +530,7 @@
 		};
 		FDC5A8FA2A532C30001FC497 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793C944DBCDCF48DCE99610A /* Pods-SwiftTT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
